@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { Music, Loader2 } from "lucide-react";
+import Image from "next/image";
 
 interface Playlist {
   id: string;
@@ -115,10 +116,12 @@ export default function Playlists() {
           >
             <div className="aspect-square">
               {playlist.images[0] ? (
-                <img
+                <Image
                   src={playlist.images[0].url}
                   alt={playlist.name}
-                  className="h-full w-full object-cover"
+                  className="object-cover"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               ) : (
                 <div className="h-full w-full flex items-center justify-center bg-gray-900">

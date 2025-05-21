@@ -42,7 +42,6 @@ export default function CreatePlaylist() {
         throw new Error(data.error || "Failed to generate playlist");
       }
 
-      const data = await response.json();
       router.push(`/playlists`);
     } catch (error) {
       console.error("Error generating playlist:", error);

@@ -84,8 +84,8 @@ export default async function Home() {
               Everything you need to create the perfect playlist
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Whether you're looking for upbeat workout music or chill evening
-              vibes, just describe what you want and we'll create the perfect
+              Whether you&apos;re looking for upbeat workout music or chill evening
+              vibes, just describe what you want and we&apos;ll create the perfect
               playlist.
             </p>
           </div>

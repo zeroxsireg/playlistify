@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     const accessToken = session.accessToken as string;
 
-    let tracks: string[] = [];
+    const tracks: string[] = [];
     let description = "";
 
     switch (method) {
